@@ -1,0 +1,44 @@
+*, html, body{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  background-color: white;
+}
+
+nav .logo-icon img {
+  width: 55px;
+  height: 55px;
+}
+
+nav{
+  background-color: black;
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 3rem;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  align-items: center;
+  gap: 1rem;
+}
+
+nav ul li a{
+  text-decoration: none;
+  font-family: "Poppins", serif;
+  font-weight: 600;
+  font-style: normal;
+  color:white;
+  transition: .1s;
+}
+
+nav ul li a:hover{
+  background-color:yellow;
+  padding: 10px 10px;
+  border-radius: 5px;
+  color: black;
+}
