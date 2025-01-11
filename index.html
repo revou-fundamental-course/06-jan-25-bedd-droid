@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>PROJECT REVOU</title>
     <link rel="stylesheet" href="css/style.css" />
+    <!-- ICON STYLE -->
+    <script src="https://unpkg.com/@phosphor-icons/web@2.1.1"></script>
     <!-- FONTS STYLE -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -13,30 +15,43 @@
       rel="stylesheet"
     />
   </head>
+
   <body>
-    <!-- LOGO & NAVIGATION -->
+    <!-- LOGO & NAVIGATION BAR START-->
     <header class="main-header">
       <nav>
-        <!-- LOGO -->
+        <!-- LOGO START -->
         <div class="logo-icon">
           <img src="./logo/revou.logo.png" alt="my-avatar" />
         </div>
-        <!-- NAVIGATION BUTTON -->
-        <ul>
+        <!-- LOGO END -->
+
+        <!-- HAMBURGER ICON START -->
+        <div id="hamburger-icon" class="hamburger-icon">
+          <i class="ph ph-list"></i>
+        </div>
+        <!-- HAMBURGER ICON END -->
+
+        <!-- NAVIGATION BUTTON START -->
+        <ul id="menu-list" class="hidden">
           <li>
-          <a href="#">Home</a>
+            <a href="#">Home</a>
           </li>
           <li>
-          <a href="#">Our Profile</a>
+            <a href="#">Our Profile</a>
           </li>
           <li>
-          <a href="#">Portofolio</a>
+            <a href="#">Portofolio</a>
           </li>
           <li>
-          <a href="#">Message Us</a>
+            <a href="#">Message Us</a>
           </li>
         </ul>
+        <!-- NAVIGATION BUTTON END -->
       </nav>
     </header>
+    <!-- LOGO & NAVIGATION BAR END-->
+
+    <script src="./js/script.js"></script>
   </body>
 </html>
