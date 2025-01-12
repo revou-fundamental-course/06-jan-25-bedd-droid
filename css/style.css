@@ -8,7 +8,10 @@ body {
 }
 
 body {
-  background-color: rgb(0, 0, 0);
+  background-color: black;
+    /* padding-bottom: 1000px; */
+    display: flex;
+    flex-direction: column;
 }
 
 /* CSS STYLE HEADER START */
@@ -22,6 +25,9 @@ nav {
   display: flex;
   justify-content: space-between;
   padding: 1rem 3rem;
+  position: fixed;
+  width: 100%;
+  z-index: 999;
 }
 
 nav ul {
@@ -57,6 +63,9 @@ nav ul li a:hover {
 @media only screen and (max-width: 768px) {
   nav {
     flex-wrap: wrap;
+    position: fixed;
+    width:100%;
+    top: 0;
   }
   nav ul {
     flex-direction: column;
@@ -69,6 +78,94 @@ nav ul li a:hover {
     display: flex;
     align-items: center;
   }
+
 }
 /* CSS STYLE HEADER END */
 
+/* CSS STYLE WELCOME SECTION START */
+.container{
+  display: flex;
+  margin: 125px 0;
+  margin-left: 45px;
+  flex-direction: column;
+  position: relative;
+  /* z-index: -99; */
+}
+.home-page{
+  color: white;
+}
+
+.paragraf{
+  color: yellow;
+  font-family: "Poppins", serif;
+  font-weight: 400;
+  font-style: normal;
+  animation: bouncing 3s infinite;
+}
+
+.judul{
+  font-family: "Poppins", serif;
+  font-weight: 700;
+  font-style: normal;
+  animation: bouncing 3s infinite;
+}
+
+@keyframes bouncing {
+  0%{
+    transform: translateY(0)
+  }
+
+  50%{
+    transform: translateY(50%)
+  }
+
+  100%{
+    transform: translateY(0)
+  }
+}
+/* CSS STYLE WELCOME SECTION END */
+
+/* CSS STYLE HERO IMAGE START */
+.banner-image{
+  border: 5px solid white;
+  height: 450px;
+  display: block;
+  position: relative;
+  padding-left: 50px;
+  padding-right: 50px;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  margin-top: -35px;
+} 
+/* CSS STYLE HERO IMAGE END */
+
+/* .main-page{
+  height: 500px;
+  color: white;
+} */
+
+h2{
+  height: 500px;
+  color: yellow;
+  display: flex;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
+  /* margin-bottom: 10px;
+  margin-top: -15px; */
+}
+
+footer {
+  color: rgb(0, 0, 0);
+  text-align: center;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+.kotak{
+  background-color: yellow;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
